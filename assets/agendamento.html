@@ -1,0 +1,169 @@
+
+
+<!DOCTYPE html>
+<html lang="Pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clínica X - Serviço De Saúde</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header id="">
+        <nav class="nav">
+            <div class="logo">
+                <img src="imagens/Clinica-logo.png" alt="logo" width="240" height="240">
+            </div>
+    
+            <ul class="menu"><a class="menu-link" target="_blank">Home</a></ul>
+            <ul class="menu"><a class="menu-link" target="_blank">Agendamento</a></ul>
+            <ul class="menu"><a class="menu-link" href="contato.html" target="_blank">Contato</a></ul>
+            <ul class="menu"><a class="menu-link" href="contato.html" target="_blank">Sobre</a></ul>
+    
+            <br><br>
+    
+            <ul class="menu"><a class="menu_login" target="_blank">Login</a></ul>
+            <ul class="menu"><a class="menu__cadastre-se" target="_blank">Cadastre-se</a></ul>
+    
+            </div>
+    
+            <div class="menu-icon">
+                <img src="imagens/menu_white_36dp.svg">
+    
+            </div>
+    
+        </nav>  
+        
+    </header>>
+        <div class="container-agendamento">
+            <div class="content-agendamento">
+              <div class="lado_esquerdo">
+                
+                <div class="informacoes_endereco">
+                    <img src="imagens/Clinica-logo.png" alt="logo" width="240" height="240">
+                    
+                  <h1> <img src="imagens/iconmonstr-map-8.svg" alt="">Endereço </h1>
+                    <p class="conteudo-paragrafo"> 
+                    Av. Eng. Abdias de Carvalho <br>
+                    Número: 1678<br>
+                    Madalena, Recife-PE<br>
+                    </p>
+    
+                </div>
+                <div class="informacoes_telefones">
+                    <h1>Telefones</h1>
+                        <p class="conteudo-paragrafo">
+                            <img src="imagens/iconmonstr-phone.svg" alt=""width="15px" > 81 3455 4291 <br> 
+                            <img src="imagens/iconmonstr-phone.svg" alt=""width="15px" > 81 3455 4392 <br>
+                        </p>
+      
+                </div>
+                  <div class="informacoes_email">
+                    <h1>Email</h1>
+                    <p class="conteudo-paragrafo"> <img src="imagens/iconmonstr-email-1.svg" alt=""width="15px" > contato@clincax.com.br</p>
+      
+                </div>
+                <div>
+                    <h1>Redes Sociais</h1>
+                    <a> <img src="imagens/iconmonstr-facebook-3.svg" alt="Facebook"></a>
+                    <a> <img src="imagens/iconmonstr-instagram-13.svg" alt="Instagram"></a>
+                    <a> <img src="imagens/iconmonstr-linkedin-3.svg" alt="Linkedin"></a>
+                </div>
+    
+              </div>
+    
+              <div class="lado_direito">
+                <h1 class="titulo-agendamento">Faça seu agendamento</h1>
+               
+                <form class="formulario-container" onsubmit="alert('consulta marcada com sucesso!');"> 
+                    <fieldset> 
+                        <legend>Dados Pessoais</legend>
+                            <div> 
+                                 <div class="row"> 
+                                     <label>Nome</label> <input type="text" name="name">
+                                </div>
+        
+                                <div class="row">
+                                 <label>CPF</label> <input type="number" name="CPF">
+                                </div> 
+                   
+                                <div class="row"> 
+                                    <label>Telefone</label> <input type="number" name="phone number">
+                                 </div>
+        
+                                <div class="row"> 
+                                     <label>Email</label> <input type="email" name="email">
+                                </div>  
+                         </div>
+                    </fieldset>
+        
+            
+        
+            <fieldset> 
+            <legend>Agende a sua consulta</legend>
+                
+                <div class="row"> 
+                        <label>Especialidade:</label>
+                            <select name="especialidade"> 
+                                <option> Selecione a especialidade  </option >
+                                <option value = "Raio-X" > Raio-X </option >
+                                <option value = "Ultrassom" > Ultrassom </option >
+                                <option value = "Ultrassom com Dopler" > Ultrassom com Dopler </option >
+                                <option value = "Tomografia" > Tomografia </option >
+                                <option value = "Ressonância" > Ressonância </option >
+                                <option value = "Exames cardiológicos" > Exames cardiológicos </option >
+                                <option value = "Endoscopia" > Endoscopia </option >
+                            </select>
+                   
+                        <label>Unidade:</label> 
+                            <select name="unidade">
+                                <option> Selecione a unidade </option >
+                                <option value = "Derby" > Derby </option >
+                                <option value = "Boa Viagem" > Boa Viagem </option >
+                                <option value = "Olinda" > Olinda </option >
+                                <option value = "Casa Forte" > Casa Forte </option >
+                            </select> 
+                </div>
+        
+                <div class="row">
+                    <label>Convênio:</label>
+                        <select name="convenio">
+                            <option> Selecione o convênio </option >
+                            <option value = "unimed" > Unimed </option >
+                            <option value = "Amil" > Amil </option >
+                            <option value = "Petrobrás" > Petrobrás </option >
+                            <option value = "Amil" > Amil </option >
+                        </select>
+        
+                    <label>Data:</label><input type="date" name="date">
+                </div>
+        
+                <div class="row"> 
+                    <label>Horário:</label>
+                        <select name="horario">
+                            <option> Selecione o horário </option >
+                            <option value = "07:00" > 07:00 </option >
+                            <option value = "08:00" > 08:00 </option >
+                            <option value = "09:00" > 09:00 </option >
+                            <option value = "10:00" > 10:00 </option >
+                        </select>
+        
+        
+                    <label>Requisição médica:</label><input type="file" multiple name="file">
+                </div>
+            </fieldset>
+        <div class="row"> 
+            <button type="submit" >Enviar</button> 
+            <button type="reset"> Limpar tudo </button>
+        </div>
+        
+        </div> 
+        </form>
+              </div>
+            </div>
+          </div>
+    
+
+<footer class="rodape"> <img src="imagens/iconmonstr-copyright-2.svg" alt="" width="15px"> 2023 ClinicaX • Desenvolvido por Gabriela Santa'Ana • Todos os direitos reservados</footer>
+</body>
+</html>

@@ -8,90 +8,91 @@
 }
 
 .nav {
-    display: flex;
-    justify-content:center;
-    align-items: center;
-    color: #00A99D;
-    background-color:#ffffff;
-    box-shadow:10px 5px 20px #eff4f4;
-    text-decoration: none;
-    height: 80px;
-    gap: 50px;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  color:#1c3249;
+  background-color:#ffffff;
+  box-shadow:10px 5px 20px #eff4f4;
+  text-decoration: none;
+  height: 80px;
+  gap: 50px;
 
 }
 
 
 .menu{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 
 
 .menu-link{
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    color: #00A99D;
-    font-size: 18px;
-    position: relative;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color:#1c3249;
+  font-size: 18px;
+  position: relative;
 
 
 }
 
 .menu-link::after{
-    content: "  ";
-    width: 0%;
-    height: 2px;
-    background-image: linear-gradient(45deg,  #46a37f , #ffb800);
-    position: absolute;
-    bottom: 0;
-    left:0;
-    transition: 0.5s ease-in-out;
+  content: "  ";
+  width: 0%;
+  height: 2px;
+  background-image: linear-gradient(45deg,   #7d888d , #1579c1);
+  position: absolute;
+  bottom: 0;
+  left:0;
+  transition: 0.5s ease-in-out;
 }
 .menu-link:hover::after{
-    width: 100%;
+  width: 100%;
 }
 
 
 .menu_login,.menu__cadastre-se{
-    background-color: #00A99D;
-    width: 240px;
-    text-align: center;
-    border-radius: 16px;
-    font-size: 18px;
-    text-decoration: none;
-    padding: 21.5px 0;
-    color: #ffffff;
-    padding: 10px 50px;
-    cursor: pointer;
+  background-color: #1579c1;
+  width: 240px;
+  text-align: center;
+  border-radius: 16px;
+  font-size: 18px;
+  text-decoration: none;
+  padding: 21.5px 0;
+  color: #ffffff;
+  padding: 10px 50px;
+  cursor: pointer;
 
 }
 
 .menu_login:hover{
-    background-color: #ffb800;
+  background-color:  #1c3249;
 }
 
 .menu__cadastre-se:hover{
-    background-color: #ffb800;
+  background-color:  #1c3249;
 }
 
 .logo{
-    width: 25%;
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    
+  width: 25%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin-top:  10px ;
+  
 
 }
 
 .menu-icon{
-    display: none;
-    cursor: pointer;
+  display: none;
+  cursor: pointer;
 }
 .menu-icon img{
-    width: 30px;
+  width: 30px;
 }
 
 @media screen and (max-width:1030px){
@@ -116,12 +117,13 @@
     
 }
 .content{
-    background-color: #00A99D;
+    background-color: #1579c1;
     display: flex;
     align-items:center;
     flex-direction:row;
     gap: 30px;
-    padding: 30px 30px;
+    margin-top: -50px;
+    padding: 30px 50px;
     border-radius: 20px;
    
 
@@ -147,7 +149,7 @@
     right: -50px;
     top: 50%;
     transform: translateY(-50%);
-    background: #ffb800;
+    background: #1c3249;
   }
   .content .lado_esquerdo {
     margin: 40px;
@@ -224,26 +226,115 @@ h1{
   border: none;
   padding: 8px 16px;
   border-radius: 6px;
-  background: #ffb800;
+  background:  #1c3249;
   cursor: pointer;
   transition: all 0.3s ease;
 }
 .button input[type="button"]:hover{
-  background: #ffb700c8;;
+  background:  #1c324988;;
+}
+/* style página de agendamento*/
+
+.container-agendamento{
+    
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6px;
+  padding: 20px 60px 30px 40px;
+  
+  
+  
+}
+.content-agendamento{
+ 
+  display: flex;
+  align-items:center;
+  flex-direction:row;
+  gap: 30px;
+  margin-top: -50px;
+  padding: 30px 50px;
+  border-radius: 20px;
+ 
+
+ 
 }
 
-.rodape{
-    background-color: #00A99D;
-    color: #ffffff;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 2rem;
-    
-    
-    
+.container-agendamento .content-agendamento .lado_esquerdo{
+  width: 25%;
+  height: 100%;
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+  position: relative;
+  
 }
+.content-agendamento .lado_esquerdo::before{
+  content: '';
+  position: absolute;
+  height: 77vh;
+  width: 3px;
+  right: -50px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #1579c1;
+}
+.content-agendamento .lado_esquerdo {
+  margin: 40px;
+  gap: 20px;
+  text-align: center;
+}
+
+.titulo-agendamento{
+  font-size: 20px;
+  color: #b31c1c;
+  margin: 10px;
+  
+ 
+}
+.conteudo-paragrafo{
+  color: #000000;;
+}
+
+.container-agendamento .content-agendamento .lado_direito{
+  width: 75%;
+  margin-left: 10px;
+  float:right;
+  
+}
+.content-agendamento .lado_direito .titulo{
+  font-size: 23px;
+  font-weight: 600;
+  
+  
+}
+.lado_direito .conteudo-input{
+  height: 50px;
+  width: 100%;
+  margin: 12px 0;
+}
+
+
+
+.rodape{
+
+  background-color:#1579c1;
+  color: #ffffff;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  
+  
+  
+}
+
 
 @media (max-width: 950px) {
     .container{
