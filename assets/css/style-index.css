@@ -156,7 +156,7 @@ body{
     width: 350px;
     height: 400px;
     background-color:#ffffff;
-    border: 1px solid #000;;
+    border: 1px solid #00A99D;
     border-radius: 10px;
    
     
@@ -184,12 +184,32 @@ ul{
     
     
 }
+.box-agendamento{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 50px 70px;
+    background-color: #00A99D;
+    color:#ffffff;
+    width: 200px;
+    border-radius: 10px;
+    font-size: 16px;
+    text-decoration: none;
+    padding: 10px 0;
+    
+  
+    
+    
+
+}
+
 /* style rodapé*/
 
 .rodape{
     background-color: #00A99D;
     color: #ffffff;
-    position: absolute;
+    
     bottom: 0;
     width: 100%;
     display: flex;
