@@ -40,71 +40,49 @@
               <div class="lado_esquerdo">
                 
                 <div class="informacoes_endereco">
-                    <img src="assets/imagens/Clinica.png" alt="logo" width="240" height="240">
-                    
-                  <h1> <img src="assets/imagens/iconmonstr-map-8.svg" alt="">Endereço </h1>
-                    <p class="conteudo-paragrafo"> 
-                    Av. Eng. Abdias de Carvalho <br>
-                    Número: 1678<br>
-                    Madalena, Recife-PE<br>
-                    </p>
+                    <h1 class="titulo-agendamento">Agendamento de consulta</h1>
+
+                    <img src="assets/imagens/Health professional team-rafiki.svg" alt="" width="400">
     
                 </div>
-                <div class="informacoes_telefones">
-                    <h1>Telefones</h1>
-                        <p class="conteudo-paragrafo">
-                            <img src="assets/imagens/iconmonstr-phone.svg" alt=""width="15px" > 81 3455 4291 <br> 
-                            <img src="assets/imagens/iconmonstr-phone.svg" alt=""width="15px" > 81 3455 4392 <br>
-                        </p>
-      
-                </div>
-                  <div class="informacoes_email">
-                    <h1>Email</h1>
-                    <p class="conteudo-paragrafo"> <img src="assets/imagens/iconmonstr-email-1.svg" alt=""width="15px" > contato@clincax.com.br</p>
-      
-                </div>
-                <div>
-                    <h1>Redes Sociais</h1>
-                    <a> <img src="assets/imagens/iconmonstr-facebook-3.svg" alt="Facebook"></a>
-                    <a> <img src="assets/imagens/iconmonstr-instagram-13.svg" alt="Instagram"></a>
-                    <a> <img src="assets/imagens/iconmonstr-linkedin-3.svg" alt="Linkedin"></a>
-                </div>
-    
+
               </div>
     
               <div class="lado_direito">
-                <h1 class="titulo-agendamento">Faça seu agendamento</h1>
                
                 <form class="formulario-container" onsubmit="alert('consulta marcada com sucesso!');"> 
-                    <fieldset> 
+                    <fieldset class="box-dados-pessoais"> 
                         <legend>Dados Pessoais</legend>
                             <div> 
                                  <div class="row"> 
-                                     <label>Nome</label> <input type="text" name="name">
+                                    <label for="name">Nome Completo</label>
+                                    <input id="name" type="text" name="name" placeholder="digite seu nome completo" class="input-agendamento" required>
                                 </div>
         
                                 <div class="row">
-                                 <label>CPF</label> <input type="number" name="CPF">
+                                 <label>CPF</label> <input type="number" name="CPF" class="input-agendamento">
                                 </div> 
                    
                                 <div class="row"> 
-                                    <label>Telefone</label> <input type="number" name="phone number">
+                                    <label for="number">Celular</label>
+                                    <input id="number" type="tel" name="number" placeholder="(xx) xxxx-xxxx" required class="input-agendamento">
                                  </div>
         
                                 <div class="row"> 
-                                     <label>Email</label> <input type="email" name="email">
+                                    <label for="email">E-mail</label>
+                                    <input id="email" type="email" name="email" placeholder="Digite seu email" required  class="input-agendamento">
                                 </div>  
                          </div>
                     </fieldset>
         
             
         
-            <fieldset> 
+            <fieldset class="box-consulta"> 
             <legend>Agende a sua consulta</legend>
                 
                 <div class="row"> 
                         <label>Especialidade:</label>
-                            <select name="especialidade"> 
+                            <select name="especialidade" class="input-consulta"> 
                                 <option> Selecione a especialidade  </option >
                                 <option value = "Raio-X" > Raio-X </option >
                                 <option value = "Ultrassom" > Ultrassom </option >
@@ -116,7 +94,7 @@
                             </select>
                    
                         <label>Unidade:</label> 
-                            <select name="unidade">
+                            <select name="unidade" class="input-consulta">
                                 <option> Selecione a unidade </option >
                                 <option value = "Derby" > Derby </option >
                                 <option value = "Boa Viagem" > Boa Viagem </option >
@@ -126,21 +104,13 @@
                 </div>
         
                 <div class="row">
-                    <label>Convênio:</label>
-                        <select name="convenio">
-                            <option> Selecione o convênio </option >
-                            <option value = "unimed" > Unimed </option >
-                            <option value = "Amil" > Amil </option >
-                            <option value = "Petrobrás" > Petrobrás </option >
-                            <option value = "Amil" > Amil </option >
-                        </select>
         
-                    <label>Data:</label><input type="date" name="date">
+                    <label>Data:</label><input type="date" name="date" class="input-consulta">
                 </div>
         
                 <div class="row"> 
                     <label>Horário:</label>
-                        <select name="horario">
+                        <select name="horario" class="input-consulta">
                             <option> Selecione o horário </option >
                             <option value = "07:00" > 07:00 </option >
                             <option value = "08:00" > 08:00 </option >
@@ -149,10 +119,10 @@
                         </select>
         
         
-                    <label>Requisição médica:</label><input type="file" multiple name="file">
+                    <label>Requisição médica:</label><input type="file" multiple name="file" class="input-consulta">
                 </div>
             </fieldset>
-        <div class="row"> 
+        <div class="box-buttons"> 
             <button type="submit" >Enviar</button> 
             <button type="reset"> Limpar tudo </button>
         </div>

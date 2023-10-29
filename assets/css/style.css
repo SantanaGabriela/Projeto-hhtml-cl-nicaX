@@ -233,6 +233,7 @@ h1{
 .button input[type="button"]:hover{
   background:  #1c324988;;
 }
+
 /* style página de agendamento*/
 
 .container-agendamento{
@@ -269,14 +270,13 @@ h1{
   flex-direction:column;
   align-items: center;
   justify-content: center;
-  margin-top: 50px;
   position: relative;
   
 }
 .content-agendamento .lado_esquerdo::before{
   content: '';
   position: absolute;
-  height: 77vh;
+  height: 60vh;
   width: 3px;
   right: -50px;
   top: 50%;
@@ -289,15 +289,17 @@ h1{
   text-align: center;
 }
 
+.formulario-container{
+  display:flex;
+  flex-direction: column;
+  gap: 20px;
+}
 .titulo-agendamento{
-  font-size: 20px;
-  color: #b31c1c;
-  margin: 10px;
+  font-size: 30px;
+  color: #1579c1;
+  padding: 10px 5px 10px 5px;
   
  
-}
-.conteudo-paragrafo{
-  color: #000000;;
 }
 
 .container-agendamento .content-agendamento .lado_direito{
@@ -306,9 +308,10 @@ h1{
   float:right;
   
 }
-.content-agendamento .lado_direito .titulo{
+.content-agendamento .lado_direito .titulo-agendamento{
   font-size: 23px;
   font-weight: 600;
+  
   
   
 }
@@ -318,6 +321,52 @@ h1{
   margin: 12px 0;
 }
 
+.box-dados-pessoais, .box-consulta{
+padding: 10px;
+
+}
+
+.row{
+  display: flex;
+    flex-direction: column;
+    width: 900px;
+    font-size: 16px;
+
+}
+
+.input-agendamento, .input-consulta{
+  margin: 0.1rem 0;
+  padding: 0.3rem 0.7rem;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 1px 1px 6px #00001c;
+  font-size: 16px;
+  width: 100%; 
+ 
+}
+
+.box-buttons{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content:center;
+  gap: 1.0rem;
+}
+
+button{
+  color: #ffffff;
+  font-size: 18px;
+  outline: none;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  background:#1579c1;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+button:hover{
+  background:  #1c324988;;
+}
 
 
 .rodape{
