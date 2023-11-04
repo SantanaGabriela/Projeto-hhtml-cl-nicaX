@@ -680,3 +680,44 @@ button:hover{
      margin-left: 0;
    }
   }
+
+  /*responsividade página inicial*/
+
+  @media(max-width: 950px){
+    .conteudo-inicial,.menu-servicos,.box-servicos{
+
+      width: 90%;
+      padding: 50px 5px 10px 10px ;
+      flex-direction: column;
+      
+    
+    }
+    .titulo,.p-titulo{
+      width: 75%;
+     margin-left: 55px;
+    }
+    .img-conteudo-inicial,.fundo{
+      display: none;
+    
+    }
+    header{
+      display: none;
+    }
+    body{
+      max-width: 350px;
+    }
+
+    .conteudo-servicos{
+      width: 500px;
+      height: 600px;
+      background-color: transparent;
+      padding: 10px ;
+  
+      }
+      .rodape{
+        display:none;
+        
+        
+      }
+  
+  }
