@@ -683,41 +683,96 @@ button:hover{
 
   /*responsividade página inicial*/
 
-  @media(max-width: 950px){
-    .conteudo-inicial,.menu-servicos,.box-servicos{
-
+  @media (max-width: 900px) {
+    header,.fundo{
+      display: none;
+    }
+  
+    main{
       width: 90%;
-      padding: 50px 5px 10px 10px ;
+      padding: 30px 40px 40px 35px ;
+    }
+    .conteudo-inicial,.menu-servicos{
+      width: 90%;
+      padding: 30px 40px 40px 35px ;
       flex-direction: column;
-      
-    
-    }
-    .titulo,.p-titulo{
-      width: 75%;
-     margin-left: 55px;
-    }
-    .img-conteudo-inicial,.fundo{
-      display: none;
-    
-    }
-    header{
-      display: none;
-    }
-    body{
-      max-width: 350px;
-    }
 
+    }
     .conteudo-servicos{
-      width: 500px;
-      height: 600px;
       background-color: transparent;
-      padding: 10px ;
-  
-      }
-      .rodape{
-        display:none;
-        
-        
-      }
-  
+    }
+    .img-conteudo-inicial{
+      width: 650px;
+      height: 400px;
+    }
+    .titulo-slogan,.p-titulo{
+      display: flex;
+    }
   }
+
+  /* responsividade página de agendamento*/
+  @media screen and (max-width: 950px) {
+    .container-agendamento{
+      width: 90%;
+      padding: 30px 40px 40px 35px ;
+    }
+    .container-agendamento .content-agendamento .lado_direito{
+     width: 75%;
+     margin-left: 55px;
+  }
+  }
+  @media screen and  (max-width: 820px) {
+    .container-agendamento{
+      margin: 40px 0;
+      height: 100%;
+    }
+    .container-agendamento .content-agendamento{
+      flex-direction: column;
+    }
+    .container-agendamento{
+     width: 100%;
+     flex-direction: row;
+     margin-top: 40px;
+     justify-content: center;
+     flex-wrap: wrap;
+   }
+   .container-agendamento .content-agendamento .lado_esquerdo::before{
+     display: none;
+   }
+   .container-agendamento .content-agendamento .lado_direito{
+     width: 100%;
+     margin-left: 0;
+   }
+
+   .formulario-container,.box-dados-pessoais,.box-consulta,.row{
+    width: 100%;
+    height: auto;
+    padding-left: 30px;
+    padding-right: 30px;
+    text-align: center;
+    display:flexbox;
+    justify-content: center;
+    align-items: center;
+    
+    
+
+   }
+ 
+  }
+
+   /* responsividade página de cadastro*/
+   @media screen and (max-width: 950px) {
+    .container-cadastro{
+      width: 90%;
+      padding: 30px 40px 40px 35px ;
+      background-color:#1579c1;
+    }
+    .form-image{
+   display: none;
+  }
+
+  .form{
+    width: 500px;
+  }
+  }
+
