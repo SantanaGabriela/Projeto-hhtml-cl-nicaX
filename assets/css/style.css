@@ -19,6 +19,7 @@ a {
 }
 
 .header {
+  color:#1c3249;
   background-color:#ffffff;
   box-shadow:10px 5px 20px #eff4f4;
   padding-inline: 16px;
@@ -30,10 +31,6 @@ a {
   max-width: 1280px;
   height: 70px;
   margin-inline: auto;
-  
-  
-  
-
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -41,7 +38,6 @@ a {
 }
 
 .logo {
-  width: 25%;
   display:flex;
   justify-content:start;
   margin-top:  10px ;
@@ -50,8 +46,9 @@ a {
 
 .nav-list {
   display: flex;
-  gap: 30px;
+  gap: 60px;
   list-style: none;
+  width: 75%;
   
 }
 
@@ -61,7 +58,7 @@ a {
   text-decoration: none;
   font-size: 18px;
   position: relative;
-  color:#1c3249;
+  color: #00001c;
   
 
 }
@@ -80,13 +77,6 @@ a {
   width: 100%;
 }
 
-.nav-list-esquerda{
-  display: flex;
-  gap: 20px;
-  list-style: none;
-  width: 40%;
-
-}
 
 .menu_login,.menu__cadastre-se{
   background-color: #1579c1;
@@ -766,7 +756,7 @@ button:hover{
   .nav.active .hamburguer::after {
     transform: rotate(-135deg);
     top: -7px;
-    
+    z-index: 1;
     
   }
 }
