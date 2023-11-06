@@ -52,7 +52,6 @@ a {
   display: flex;
   gap: 30px;
   list-style: none;
-  width: 45%;
   
 }
 
@@ -62,6 +61,7 @@ a {
   text-decoration: none;
   font-size: 18px;
   position: relative;
+  color:#1c3249;
   
 
 }
@@ -113,7 +113,6 @@ a {
 
 .nav-list a {
   font-size: 18px;
-  color: #1c3249;
   padding-block: 5px;
 }
 
