@@ -6,97 +6,97 @@
     <title>Clínica X - Serviço De Saúde</title>
     <link rel="stylesheet" href="assets/css/style.css"> 
     <link rel="icon" href="assets/imagens/favicon.png" type="image/x-icon">
+    <script defer src="/assets/Js/app.js"></script>
+
     <!--desenvolvido por Gabriela Cristina -->
 </head>
 <body>
-    <header>
+    <header class="header">
         <nav class="nav">
-            <div class="logo">
-                <img src="assets/imagens/Clinica-logo.png" alt="logo" width="240" height="240">
-            </div>
-
-            <ul class="menu"><a class="menu-link" href="index.html" target="_blank">Home</a></ul>
-            <ul class="menu"><a class="menu-link" href="agendamento.html" target="_blank">Agendamento</a></ul>
-            <ul class="menu"><a class="menu-link" href="contato.html" target="_blank">Contato</a></ul>
-            <ul class="menu"><a class="menu-link" href="*" target="_blank">Sobre</a></ul>
-
-            <br><br>
-
-            <ul class="menu"><a class="menu_login" target="_blank">Login</a></ul>
-            <ul class="menu"><a class="menu__cadastre-se" href="cadastro.html" target="_blank">Cadastre-se</a></ul>
-
-            </div>
-
-            <div class="menu-icon">
-                <img src="assets/imagens/menu_white_36dp.svg">
-
-            </div>
-
-        </nav>  
-        
-    </header>
-        <main>
-            <section class="conteudo-inicial">
-                <img class="img-conteudo-inicial" src="assets/imagens/Doctors-pana.svg" alt="" width="700" height="600">
-
-                <div>
-                    <h1 class="titulo-slogan"> A melhor qualidade em <strong class="titulo-destaque">consultas, exames e check-up.</strong></h1>
-                    <p class="p-titulo">Serviços médicos de excelência para garantir o seu bem- estar. Encontre facilmente serviços de saúde, compare preços e agende seu atendimento com facilidade e flexibilidade. Cuide da sua saúde com confiança, encontrando os melhores serviços de consultas, exames e vacinas.</p>
-                </div>
-
-                <img class="fundo" src="assets/imagens/shape.svg" alt="">
-
-            </section>
-
+            <a href="/" class="logo"> <img src="/assets/imagens/Clinica-logo.png" alt="logo" width="240" height="240"></a>
+            <button class="hamburguer"></button>
+            <ul class="nav-list">
+    
+                <li><a href="/index.html"  class="menu-link">Home</a></li>
+                <li><a href="/agendamento.html"  class="menu-link">Agendamento</a></li>
+                <li><a href="/contato.html"  class="menu-link">Contatos</a></li>
+                <li><a href="x"  class="menu-link">Sobre</a></li>
+    
+            </ul>
+    
+            <ul class="nav-list-esquerda">
+                <li><a href="x" class="menu_login">Login</a></li>
+                <li><a href="/cadastro.html" class="menu__cadastre-se">Cadastre-se</a></li>
+    
+            </ul>
+    
             
+        </nav>
+    
+    </header>
+    <main class="hero">
 
-            <section class="conteudo-servicos">
-                <h1 class="titulo-servicos"> Conheça nossos serviços</h1>
-                    <div class="menu-servicos">
-                        <div class="box-servicos">
-                            <h2 class="subtitulo" > <img src="assets/imagens/icon-médico.png" width="40" height="40">Consultas Médicas</h2>
-                            <p class="p-box-servicos"> 
-                                <ul> <img src="assets/imagens/iconmonstr-check-mark-12.svg" alt="" width="20" height="30"> Agendamento fácil pelo site;</ul>
-                                <ul> <img src="assets/imagens/iconmonstr-check-mark-12.svg"  alt="" width="20" height="30"> Profissionais qualificados, de várias especialidades;</ul>
-                                <ul> <img src="assets/imagens/iconmonstr-check-mark-12.svg"  alt="" width="20" height="30"> Receitas e atestados disponibilizados na hora.</ul>        
+        <section class="conteudo-inicial">
+            <img class="img-conteudo-inicial" src="assets/imagens/Doctors-pana.svg" alt="" width="700" height="600">
+
+            <div>
+                <h1 class="titulo-slogan"> A melhor qualidade em <strong class="titulo-destaque">consultas, exames e check-up.</strong></h1>
+                <p class="p-titulo">Serviços médicos de excelência para garantir o seu bem- estar. Encontre facilmente serviços de saúde, compare preços e agende seu atendimento com facilidade e flexibilidade. Cuide da sua saúde com confiança, encontrando os melhores serviços de consultas, exames e vacinas.</p>
+            </div>
+
+            <img class="fundo" src="assets/imagens/shape.svg" alt="">
+
+        </section>
+
+        
+
+        <section class="conteudo-servicos">
+            <h1 class="titulo-servicos"> Conheça nossos serviços</h1>
+                <div class="menu-servicos">
+                    <div class="box-servicos">
+                        <h2 class="subtitulo" > <img src="assets/imagens/icon-médico.png" width="40" height="40">Consultas Médicas</h2>
+                        <p class="p-box-servicos"> 
+                            <ul> <img src="assets/imagens/iconmonstr-check-mark-12.svg" alt="" width="20" height="30"> Agendamento fácil pelo site;</ul>
+                            <ul> <img src="assets/imagens/iconmonstr-check-mark-12.svg"  alt="" width="20" height="30"> Profissionais qualificados, de várias especialidades;</ul>
+                            <ul> <img src="assets/imagens/iconmonstr-check-mark-12.svg"  alt="" width="20" height="30"> Receitas e atestados disponibilizados na hora.</ul>        
+
+                            <a class="box-agendamento" target="_blank"> Agende sua consulta</a>
+                       </p>
+                        
+                    </div>
+
+                    <div class="box-servicos">
+                        <h2 class="subtitulo" >  <img src="assets/imagens/icon-laboratório.png" alt=""  width="40" height="40"> Exames laboratoriais </h2>
+                        <p class="p-box-servicos"> 
+                            
+                            <ul> <img src="assets/imagens/iconmonstr-check-mark-12.svg" alt="" width="20" height="30"> Exame toxicológico ;</ul>
+                            <ul> <img src="assets/imagens/iconmonstr-check-mark-12.svg"  alt="" width="20" height="30"> Sexagem fetal e teste de paternidade;</ul>
+                            <ul> <img src="assets/imagens/iconmonstr-check-mark-12.svg"  alt="" width="20" height="30"> 85% dos resultados de exames em até 24 horas.</ul>        
+
+                            <a class="box-agendamento" target="_blank"> Agende seu exame</a>
+                        </p>
+                        
+                    </div>
+
+                    <div class="box-servicos">
+                        <h2 class="subtitulo" ><img src="assets/imagens/icon-medical.png" alt=""  width="40" height="40">  Checkups de saúde</h2>
+                        <p class="p-box-servicos"> 
+                                <ul> <img src="assets/imagens/iconmonstr-check-mark-12.svg" alt="" width="20" height="30"> Acompanhamento profissional;</ul>
+                                <ul> <img src="assets/imagens/iconmonstr-check-mark-12.svg"  alt="" width="20" height="30"> Pacotes de checkups para todas as idades e necessidades;</ul>
+                                <ul> <img src="assets/imagens/iconmonstr-check-mark-12.svg"  alt="" width="20" height="30"> Checkups de saúde a partir de R$ 25 mensais</ul>        
 
                                 <a class="box-agendamento" target="_blank"> Agende sua consulta</a>
                         </p>
-                            
-                        </div>
-
-                        <div class="box-servicos">
-                            <h2 class="subtitulo" >  <img src="assets/imagens/icon-laboratório.png" alt=""  width="40" height="40"> Exames laboratoriais </h2>
-                            <p class="p-box-servicos"> 
-                                
-                                <ul> <img src="assets/imagens/iconmonstr-check-mark-12.svg" alt="" width="20" height="30"> Exame toxicológico ;</ul>
-                                <ul> <img src="assets/imagens/iconmonstr-check-mark-12.svg"  alt="" width="20" height="30"> Sexagem fetal e teste de paternidade;</ul>
-                                <ul> <img src="assets/imagens/iconmonstr-check-mark-12.svg"  alt="" width="20" height="30"> 85% dos resultados de exames em até 24 horas.</ul>        
-
-                                <a class="box-agendamento" target="_blank"> Agende seu exame</a>
-                        </p>
-                            
-                        </div>
-
-                        <div class="box-servicos">
-                            <h2 class="subtitulo" ><img src="assets/imagens/icon-medical.png" alt=""  width="40" height="40">  Checkups de saúde</h2>
-                            <p class="p-box-servicos"> 
-                                    <ul> <img src="assets/imagens/iconmonstr-check-mark-12.svg" alt="" width="20" height="30"> Acompanhamento profissional;</ul>
-                                    <ul> <img src="assets/imagens/iconmonstr-check-mark-12.svg"  alt="" width="20" height="30"> Pacotes de checkups para todas as idades e necessidades;</ul>
-                                    <ul> <img src="assets/imagens/iconmonstr-check-mark-12.svg"  alt="" width="20" height="30"> Checkups de saúde a partir de R$ 25 mensais</ul>        
-
-                                    <a class="box-agendamento" target="_blank"> Agende sua consulta</a>
-                            </p>
-                            
-                               
+                        
                            
-                        </div>
+                       
                     </div>
-                
-            </section>
+                </div>
+            
+        </section>
 
-           
-        </main>
+    </main>        
+    
 <footer class="rodape"> <img src="imagens/iconmonstr-copyright-2.svg" alt="" width="15px"> 2023 ClinicaX • Todos os direitos reservados</footer>
 
 </body>
