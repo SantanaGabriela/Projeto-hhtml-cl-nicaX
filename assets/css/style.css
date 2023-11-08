@@ -145,14 +145,18 @@ a {
 }
 .titulo-slogan{
   font-weight: 600;
-  font-size: 40px;
+  font-size: 35px;
   margin-bottom: 32px;
+  margin-left: 70px;
   color: #000000;
+  text-align: justify;
 }
 .p-titulo{
   line-height: 150%;
   margin-bottom: 32px;
-  font-size: 20px;
+  margin-right: 10px;
+  font-size: 20px; 
+  text-align:justify;
 }
 
 .fundo{
