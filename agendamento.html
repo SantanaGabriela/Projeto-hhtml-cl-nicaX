@@ -1,7 +1,6 @@
-
-
 <!DOCTYPE html>
 <html lang="Pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,126 +11,135 @@
 
     <!--desenvolvido por Gabriela Cristina -->
 </head>
+
 <body>
     <header class="header">
         <nav class="nav">
-            <a href="/" class="logo"> <img src="/assets/imagens/Clinica-logo.png" alt="logo" width="240" height="240"></a>
+            <a href="/" class="logo"> <img src="/assets/imagens/Clinica-logo.png" alt="logo" width="240"
+                    height="240"></a>
             <button class="hamburguer"></button>
             <ul class="nav-list">
-    
-                <li><a href="/index.html"  class="menu-link">Home</a></li>
-                <li><a href="/agendamento.html"  class="menu-link">Agendamento</a></li>
-                <li><a href="/contato.html"  class="menu-link">Contatos</a></li>
-                <li><a href="x"  class="menu-link">Sobre</a></li>
 
-                <li><a href="x" class="menu_login">Login</a></li>
-                <li><a href="/cadastro.html" class="menu__cadastre-se">Cadastre-se</a></li>
-    
+                <li><a href="/index.html" class="menu-link">Home</a></li>
+                <li><a href="/agendamento.html" class="menu-link">Agendamento</a></li>
+                <li><a href="/contato.html" class="menu-link">Contatos</a></li>
+                <li><a href="/sobre.html" class="menu-link">Sobre</a></li>
+
+                <li><a href="/login.html" class="menu_login" target="_blank">Login</a></li>
+                <li><a href="/cadastro.html" class="menu__cadastre-se" target="_blank">Cadastre-se</a></li>
+
             </ul>
-    
-            
+
+
         </nav>
-    
+
     </header>
-        <div class="container-agendamento">
-            <div class="content-agendamento">
-              <div class="lado_esquerdo">
-                
+    <div class="container-agendamento">
+        <div class="content-agendamento">
+            <div class="lado_esquerdo">
+
                 <div class="informacoes_endereco">
                     <h1 class="titulo-agendamento">Agendamento de consulta</h1>
 
-                    <img class="img-agendamento" src="assets/imagens/Health professional team-rafiki.svg" alt="" width="400">
-    
+                    <img class="img-agendamento" src="assets/imagens/Health professional team-rafiki.svg" alt=""
+                        width="400">
+
                 </div>
 
-              </div>
-    
-              <div class="lado_direito">
-               
-                <form class="formulario-container" onsubmit="alert('consulta marcada com sucesso!');"> 
-                    <fieldset class="box-dados-pessoais"> 
-                        <legend>Dados Pessoais</legend>
-                            <div> 
-                                 <div class="row"> 
-                                    <label for="name">Nome Completo</label>
-                                    <input id="name" type="text" name="name" placeholder="digite seu nome completo" class="input-agendamento" required>
-                                </div>
-        
-                                <div class="row">
-                                 <label>CPF</label> <input type="number" name="CPF" class="input-agendamento">
-                                </div> 
-                   
-                                <div class="row"> 
-                                    <label for="number">Celular</label>
-                                    <input id="number" type="tel" name="number" placeholder="(xx) xxxx-xxxx" required class="input-agendamento">
-                                 </div>
-        
-                                <div class="row"> 
-                                    <label for="email">E-mail</label>
-                                    <input id="email" type="email" name="email" placeholder="Digite seu email" required  class="input-agendamento">
-                                </div>  
-                         </div>
-                    </fieldset>
-        
-            
-        
-            <fieldset class="box-consulta"> 
-            <legend>Agende a sua consulta</legend>
-                
-                <div class="row"> 
-                        <label>Especialidade:</label>
-                            <select name="especialidade" class="input-consulta"> 
-                                <option> Selecione a especialidade  </option >
-                                <option value = "Raio-X" > Raio-X </option >
-                                <option value = "Ultrassom" > Ultrassom </option >
-                                <option value = "Ultrassom com Dopler" > Ultrassom com Dopler </option >
-                                <option value = "Tomografia" > Tomografia </option >
-                                <option value = "Ressonância" > Ressonância </option >
-                                <option value = "Exames cardiológicos" > Exames cardiológicos </option >
-                                <option value = "Endoscopia" > Endoscopia </option >
-                            </select>
-                   
-                        <label>Unidade:</label> 
-                            <select name="unidade" class="input-consulta">
-                                <option> Selecione a unidade </option >
-                                <option value = "Derby" > Derby </option >
-                                <option value = "Boa Viagem" > Boa Viagem </option >
-                                <option value = "Olinda" > Olinda </option >
-                                <option value = "Casa Forte" > Casa Forte </option >
-                            </select> 
-                </div>
-        
-                <div class="row">
-        
-                    <label>Data:</label><input type="date" name="date" class="input-consulta">
-                </div>
-        
-                <div class="row"> 
-                    <label>Horário:</label>
-                        <select name="horario" class="input-consulta">
-                            <option> Selecione o horário </option >
-                            <option value = "07:00" > 07:00 </option >
-                            <option value = "08:00" > 08:00 </option >
-                            <option value = "09:00" > 09:00 </option >
-                            <option value = "10:00" > 10:00 </option >
-                        </select>
-        
-        
-                    <label>Requisição médica:</label><input type="file" multiple name="file" class="input-consulta">
-                </div>
-            </fieldset>
-        <div class="box-buttons"> 
-            <button type="submit" >Enviar</button> 
-            <button type="reset"> Limpar tudo </button>
-        </div>
-        
-        </div> 
-        </form>
-              </div>
             </div>
-          </div>
-    
 
-<footer class="rodape"> <img src="imagens/iconmonstr-copyright-2.svg" alt="" width="15px"> 2023 ClinicaX • Todos os direitos reservados</footer>
+            <div class="lado_direito">
+
+                <form class="formulario-container" onsubmit="alert('consulta marcada com sucesso!');">
+                    <fieldset class="box-dados-pessoais">
+                        <legend>Dados Pessoais</legend>
+                        <div>
+                            <div class="row">
+                                <label for="name">Nome Completo</label>
+                                <input id="name" type="text" name="name" placeholder="digite seu nome completo"
+                                    class="input-agendamento" required>
+                            </div>
+
+                            <div class="row">
+                                <label>CPF</label> <input type="number" name="CPF" class="input-agendamento">
+                            </div>
+
+                            <div class="row">
+                                <label for="number">Celular</label>
+                                <input id="number" type="tel" name="number" placeholder="(xx) xxxx-xxxx" required
+                                    class="input-agendamento">
+                            </div>
+
+                            <div class="row">
+                                <label for="email">E-mail</label>
+                                <input id="email" type="email" name="email" placeholder="Digite seu email" required
+                                    class="input-agendamento">
+                            </div>
+                        </div>
+                    </fieldset>
+
+
+
+                    <fieldset class="box-consulta">
+                        <legend>Agende a sua consulta</legend>
+
+                        <div class="row">
+                            <label>Especialidade:</label>
+                            <select name="especialidade" class="input-consulta">
+                                <option> Selecione a especialidade </option>
+                                <option value="Raio-X"> Raio-X </option>
+                                <option value="Ultrassom"> Ultrassom </option>
+                                <option value="Ultrassom com Dopler"> Ultrassom com Dopler </option>
+                                <option value="Tomografia"> Tomografia </option>
+                                <option value="Ressonância"> Ressonância </option>
+                                <option value="Exames cardiológicos"> Exames cardiológicos </option>
+                                <option value="Endoscopia"> Endoscopia </option>
+                            </select>
+
+                            <label>Unidade:</label>
+                            <select name="unidade" class="input-consulta">
+                                <option> Selecione a unidade </option>
+                                <option value="Derby"> Derby </option>
+                                <option value="Boa Viagem"> Boa Viagem </option>
+                                <option value="Olinda"> Olinda </option>
+                                <option value="Casa Forte"> Casa Forte </option>
+                            </select>
+                        </div>
+
+                        <div class="row">
+
+                            <label>Data:</label><input type="date" name="date" class="input-consulta">
+                        </div>
+
+                        <div class="row">
+                            <label>Horário:</label>
+                            <select name="horario" class="input-consulta">
+                                <option> Selecione o horário </option>
+                                <option value="07:00"> 07:00 </option>
+                                <option value="08:00"> 08:00 </option>
+                                <option value="09:00"> 09:00 </option>
+                                <option value="10:00"> 10:00 </option>
+                            </select>
+
+
+                            <label>Requisição médica:</label><input type="file" multiple name="file"
+                                class="input-consulta">
+                        </div>
+                    </fieldset>
+                    <div class="box-buttons">
+                        <button type="submit">Enviar</button>
+                        <button type="reset"> Limpar tudo </button>
+                    </div>
+
+            </div>
+            </form>
+        </div>
+    </div>
+    </div>
+
+
+    <footer class="rodape"> <img src="imagens/iconmonstr-copyright-2.svg" alt="" width="15px"> 2023 ClinicaX • Todos os
+        direitos reservados</footer>
 </body>
+
 </html>

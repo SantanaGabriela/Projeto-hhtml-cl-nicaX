@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clínica de Saúde - Login</title>
+    <link rel="stylesheet" href="/assets/css/style_login.css">
+</head>
+
+<body class="conteudo_login">
+    <div class="container-cadastro">
+        <div class="form-image">
+            <img src="/assets/imagens/img_login.jpg" width="500" height="700" alt="imagem_login" />
+        </div>
+        <form action="login.php" method="post" class="form">
+            <img src="/assets/imagens/Clinica-logo.png" width="300" height="300" class="input-group-logo" />
+            <div class="input-group">
+
+                <div class="input-box">
+                    <label for="cpf">CPF:</label>
+                    <input type="text" oninput="mascara(this)" id="cpf" name="cpf" placeholder="Digite seu CPF"
+                        required>
+                </div>
+                </br>
+                <div class="input-box">
+                    <label for="senha_login">Senha:</label>
+                    <input type="password" id="senha_login" name="senha" placeholder="Digite sua senha" required>
+                </div>
+                </br>
+                <input type="submit" value="Entrar">
+                <br />
+                <p>
+                    Esqueceu a senha? Clique <a href="troca-senha.html">Aqui</a>
+                </p>
+                <br />
+                <p>
+                    Quer se cadastrar? Clique <a href="cadastro.html">Aqui</a>
+                </p>
+
+                <p>
+                    <button class="button-home"><a href="/index.html">Voltar para a página inicial</a></button>
+                </p>
+        </form>
+    </div>
+</body>
+
+<script>
+
+    function mascara(i) {
+
+        var v = i.value;
+
+        if (isNaN(v[v.length - 1])) {
+            i.value = v.substring(0, v.length - 1);
+            return;
+        }
+
+        i.setAttribute("maxlength", "14");
+        if (v.length == 3 || v.length == 7) i.value += ".";
+        if (v.length == 11) i.value += "-";
+
+    }
+
+</script>
+
+</html>

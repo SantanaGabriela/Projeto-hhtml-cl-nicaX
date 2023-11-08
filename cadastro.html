@@ -1,61 +1,64 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="icon" href="assets/imagens/favicon.png" type="image/x-icon">
     <title>Formulário de cadastro - Clínica X</title>
-    <script defer src="/assets/Js/app.js"></script>
-
     <!--desenvolvido por Maiane -->
 </head>
+
 <body>
+
     <header class="header">
         <nav class="nav">
-            <a href="/" class="logo"> <img src="/assets/imagens/Clinica-logo.png" alt="logo" width="240" height="240"></a>
+            <a href="/" class="logo"> <img src="/assets/imagens/Clinica-logo.png" alt="logo" width="240"
+                    height="240"></a>
             <button class="hamburguer"></button>
             <ul class="nav-list">
-    
-                <li><a href="/index.html"  class="menu-link">Home</a></li>
-                <li><a href="/agendamento.html"  class="menu-link">Agendamento</a></li>
-                <li><a href="/contato.html"  class="menu-link">Contatos</a></li>
-                <li><a href="x"  class="menu-link">Sobre</a></li>
 
-                <li><a href="x" class="menu_login">Login</a></li>
-                <li><a href="/cadastro.html" class="menu__cadastre-se">Cadastre-se</a></li>
-    
+                <li><a href="/index.html" class="menu-link">Home</a></li>
+                <li><a href="/agendamento.html" class="menu-link">Agendamento</a></li>
+                <li><a href="/contato.html" class="menu-link">Contatos</a></li>
+                <li><a href="/sobre.html" class="menu-link">Sobre</a></li>
+
+                <li><a href="/login.html" class="menu_login" target="_blank">Login</a></li>
+                <li><a href="/cadastro.html" class="menu__cadastre-se" target="_blank">Cadastre-se</a></li>
+
             </ul>
-    
-            
+
+
         </nav>
-    
+
     </header>
+
     <div class="container-cadastro">
         <div class="form-image">
             <img src="assets/imagens/Doctors-cuate.svg">
-        
+
         </div>
         <div class="form">
-            <form action="#"> 
+            <form action="#">
                 <div class="form-header">
                     <div class="title">
                         <h1 class="titulo-cadastro">Cadastre-se</h1>
                     </div>
                     <div class="login-button">
-                        <button><a href="#">Entrar</a></button>
+                        <button><a href="/login.html">Entrar</a></button>
                     </div>
                 </div>
-              
+
                 <div class="input-group">
                     <div class="input-box">
-                        <label for="firstname">Primeiro nome</label>
-                        <input id="firstname" type="text" name="firstname" placeholder="Digite seu primeiro nome" required>
+                        <label for="nome">Nome Completo</label>
+                        <input id="nome" type="text" name="nome" placeholder="Digite seu nome completo" required>
                     </div>
 
                     <div class="input-box">
-                        <label for="lastname">Sobrenome</label>
-                        <input id="lastname" type="text" name="lastname" placeholder="Digite seu sobrenome" required>
+                        <label for="lastname">CPF</label>
+                        <input id="cpf" oninput="mascara(this)" type="text" name="cpf" placeholder="Digite seu CPF"
+                            required>
                     </div>
 
                     <div class="input-box">
@@ -65,7 +68,8 @@
 
                     <div class="input-box">
                         <label for="number">Celular</label>
-                        <input id="number" type="tel" name="number" placeholder="(xx) xxxx-xxxx" required>
+                        <input id="tel" type="tel" name="tel" placeholder="Digite o celular com DDD" maxlength="11"
+                            pattern="\(\d{2}\)\s*\d{5}-\d{4}" required>
                     </div>
 
                     <div class="input-box">
@@ -74,8 +78,9 @@
                     </div>
 
                     <div class="input-box">
-                        <label for="password">Confirme sua senha</label>
-                        <input id="password" type="Confirmpassword" name="password" placeholder="Confirme sua senha" required>
+                        <label for="confirmpassword">Confirme sua senha</label>
+                        <input id="password" type="password" name="confirmpassword" placeholder="Confirme sua senha"
+                            required>
                     </div>
                 </div>
 
@@ -115,7 +120,38 @@
     </div>
 
 
-    <footer class="rodape"> <img src="imagens/iconmonstr-copyright-2.svg" alt="" width="15px"> 2023 ClinicaX • Todos os direitos reservados</footer>
+    <footer class="rodape"> <img src="imagens/iconmonstr-copyright-2.svg" alt="" width="15px"> 2023 ClinicaX • Todos os
+        direitos reservados</footer>
 </body>
+
+<script>
+
+    function mascara(i) {
+
+        var v = i.value;
+
+        if (isNaN(v[v.length - 1])) {
+            i.value = v.substring(0, v.length - 1);
+            return;
+        }
+
+        i.setAttribute("maxlength", "14");
+        if (v.length == 3 || v.length == 7) i.value += ".";
+        if (v.length == 11) i.value += "-";
+
+    }
+
+    const tel = document.getElementById('tel') /
+        tel.addEventListener('keypress', (e) => mascaraTelefone(e.target.value))
+    tel.addEventListener('change', (e) => mascaraTelefone(e.target.value))
+
+    const mascaraTelefone = (valor) => {
+        valor = valor.replace(/\D/g, "")
+        valor = valor.replace(/^(\d{2})(\d)/g, "($1) $2")
+        valor = valor.replace(/(\d)(\d{4})$/, "$1-$2")
+        tel.value = valor
+    }
+
+</script>
 
 </html>
