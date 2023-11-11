@@ -1,0 +1,709 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,200;0,500;1,500&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: #e9f5f5;
+  font-family:'Barlow', sans-serif;
+}
+
+
+/* style menu */
+
+a {
+  font-family: sans-serif;
+  text-decoration: none;
+}
+
+.header {
+  color:#1c3249;
+  background-color:#ffffff;
+  box-shadow:10px 5px 20px #eff4f4;
+  padding-inline: 2rem;
+
+
+}
+
+.nav {
+  max-width: 1280px;
+  height: 80px;
+  margin-inline: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: -1rem;
+
+}
+
+.logo {
+  display:flex;
+  justify-content:start;
+  margin-top: 1rem;
+  
+}
+
+.nav-list {
+  display: flex;
+  gap: 50px;
+  list-style: none;
+  width: 75%;
+  
+}
+
+.menu-link{
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  font-size: 18px;
+  position: relative;
+  color: #00001c;
+  
+
+}
+
+.menu-link::after{
+  content: "  ";
+  width: 0%;
+  height: 2px;
+  background-image: linear-gradient(45deg,   #7d888d , #1579c1);
+  position: absolute;
+  bottom: 0;
+  left:0;
+  transition: 0.5s ease-in-out;
+}
+.menu-link:hover::after{
+  width: 100%;
+}
+
+
+.menu_login,.menu__cadastre-se{
+  background-color: #1579c1;
+  width: 240px;
+  text-align: center;
+  border-radius: 16px;
+  font-size: 18px;
+  text-decoration: none;
+  padding: 21.5px 0;
+  color: #ffffff;
+  padding: 10px 50px;
+  cursor: pointer;
+
+}
+
+.menu_login:hover{
+  background-color:  #1c3249
+}
+
+.menu__cadastre-se:hover{
+  background-color:  #1c3249;
+}
+
+
+.nav-list a {
+  font-size: 18px;
+  padding-block: 5px;
+}
+
+
+.hamburguer {
+  display: none;
+  border: none;
+  background: none;
+  border-top: 3px solid  #1c3249;
+  cursor: pointer;
+}
+
+.hamburguer::after,
+.hamburguer::before {
+  content: " ";
+  display: block;
+  width: 30px;
+  height: 3px;
+  background:  #1c3249;
+  margin-top: 5px;
+  position: relative;
+  transition: 0.3s;
+}
+
+
+
+/* style página de agendamento*/
+
+.container-agendamento{
+    
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6px;
+  padding: 20px 60px 30px 40px;
+  
+  
+  
+}
+.content-agendamento{
+ 
+  display: flex;
+  align-items:center;
+  flex-direction:row;
+  gap: 30px;
+  margin-bottom: 3rem;;
+  padding: 3rem 5rem;
+  border-radius: 20px;
+ 
+
+ 
+}
+
+.container-agendamento .content-agendamento .lado_esquerdo{
+  width: 25rem;
+  height: 100vh;
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  
+}
+.content-agendamento .lado_esquerdo::before{
+  content: '';
+  position: absolute;
+  height: 60vh;
+  width: 3px;
+  left: 25rem;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #1579c1;
+}
+.content-agendamento .lado_esquerdo {
+  margin: 40px;
+  gap: 20px;
+  text-align: center;
+}
+
+.formulario-container{
+  display:flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.titulo-agendamento{
+  font-size: 30px;
+  color: #1579c1;
+  padding: 1rem 3rem 1rem 2rem;
+  
+ 
+}
+
+.container-agendamento .content-agendamento .lado_direito{
+  width: 75%;
+  margin-left: 10px;
+  float:right;
+  
+}
+.content-agendamento .lado_direito .titulo-agendamento{
+  font-size: 23px;
+  font-weight: 600;
+  
+  
+  
+}
+.lado_direito .conteudo-input{
+  height: 50px;
+  width: 100vh;
+  margin: 12px 0;
+}
+
+.box-dados-pessoais, .box-consulta{
+padding: 10px;
+
+}
+
+.row{
+  display: flex;
+    flex-direction: column;
+    width: 50rem;
+    font-size: 16px;
+
+}
+
+.input-agendamento, .input-consulta{
+  margin: 0.1rem 0;
+  padding: 0.3rem 0.7rem;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 1px 1px 6px #00001c;
+  font-size: 16px;
+  width: 100%; 
+ 
+}
+
+.box-buttons{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content:center;
+  gap: 1.0rem;
+}
+
+button{
+  color: #ffffff;
+  font-size: 18px;
+  outline: none;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  background:#1579c1;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+button:hover{
+  background:  #1c324988;;
+}
+
+
+/* style página de agendamento*/
+
+.container-agendamento{
+    
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+    padding: 20px 60px 30px 40px;
+    
+    
+    
+  }
+  .content-agendamento{
+   
+    display: flex;
+    align-items:center;
+    flex-direction:row;
+    gap: 30px;
+    margin-bottom: 3rem;;
+    padding: 3rem 5rem;
+    border-radius: 20px;
+   
+  
+   
+  }
+  
+  .container-agendamento .content-agendamento .lado_esquerdo{
+    width: 25rem;
+    height: 100vh;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    
+  }
+  .content-agendamento .lado_esquerdo::before{
+    content: '';
+    position: absolute;
+    height: 60vh;
+    width: 3px;
+    left: 25rem;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #1579c1;
+  }
+  .content-agendamento .lado_esquerdo {
+    margin: 40px;
+    gap: 20px;
+    text-align: center;
+  }
+  
+  .formulario-container{
+    display:flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .titulo-agendamento{
+    font-size: 30px;
+    color: #1579c1;
+    padding: 1rem 3rem 1rem 2rem;
+    
+   
+  }
+  
+  .container-agendamento .content-agendamento .lado_direito{
+    width: 75%;
+    margin-left: 10px;
+    float:right;
+    
+  }
+  .content-agendamento .lado_direito .titulo-agendamento{
+    font-size: 23px;
+    font-weight: 600;
+    
+    
+    
+  }
+  .lado_direito .conteudo-input{
+    height: 50px;
+    width: 100vh;
+    margin: 12px 0;
+  }
+  
+  .box-dados-pessoais, .box-consulta{
+  padding: 10px;
+  
+  }
+  
+  .row{
+    display: flex;
+      flex-direction: column;
+      width: 50rem;
+      font-size: 16px;
+  
+  }
+  
+  .input-agendamento, .input-consulta{
+    margin: 0.1rem 0;
+    padding: 0.3rem 0.7rem;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 6px #00001c;
+    font-size: 16px;
+    width: 100%; 
+   
+  }
+  
+  .box-buttons{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:center;
+    gap: 1.0rem;
+  }
+  
+  button{
+    color: #ffffff;
+    font-size: 18px;
+    outline: none;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    background:#1579c1;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  button:hover{
+    background:  #1c324988;;
+  }
+  
+  /* style página de cadastro*/
+  
+  .container-cadastro {
+    display: flex;
+    justify-content: center;
+    margin: 50px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, .212);
+  }
+  
+  .titulo-cadastro{
+    color: #1c3249;
+    font-size: 25px;
+  }
+  
+  .form-image {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1579c1;
+    padding: 1rem;
+  }
+  
+  .form-image img {
+   Width: 31rem; 
+  }
+  
+  .form {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 3rem;
+  }
+  
+  .form-header {
+    margin-bottom: 3rem;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .login-button {
+    display: flex;
+    align-items: center;
+  }
+  
+  .login-button button {
+    border: none;
+    background-color: #1579c1;
+    padding: 0.4rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .login-button button:hover {
+    background-color: #1c3249;
+  }
+  
+  .login-button button a {
+    text-decoration: none;
+    font-weight: 500;
+    color: #fff;
+  }
+  
+  .input-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 1rem;
+  }
+  
+  .input-box {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.1rem;
+  }
+  
+  .input-box input {
+    margin: 0.6rem 0;
+    padding: 0.8rem 1.2rem;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 6px #00001c;
+  }
+  
+  .input-box input:hover {
+    background-color: #1c324910;
+  }
+  
+  .input-box input:focus-visible {
+    outline:1px solid #1c3249;
+  }
+  
+  .input-box label,
+  .gender-title h6 {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #1c3249;
+  }
+  
+  .input-box input::placeholder {
+    color: #1c3249;
+  }
+  
+  .gender-group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.62rem;
+    padding: 0 0.5rem;
+  }
+  
+  .gender-input {
+    display: flex;
+    align-items: center;
+  }
+  
+  .gender-input input {
+    margin-right: 0.35rem;
+  }
+  
+  .gender-input label {
+    font-size: 0.81rem;
+    font-weight: 600;
+    color: #000000c0;
+  }
+  
+  .continue-button button {
+    width: 100%;
+    margin-top: 2.5rem;
+    border: none;
+    background-color: #1579c1;
+    padding: 0.62rem;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .continue-button button:hover {
+    background-color: #1c3249;
+  }
+  
+  .continue-button button a {
+    text-decoration: none;
+    font-size: 0.93rem;
+    font-weight: 500;
+    color: #fff;
+  }
+  
+  
+  /* style rodapé*/
+  
+  .rodape{
+  
+    background-color:#1579c1;
+    color: #ffffff;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    
+    
+    
+  }
+
+  /* responsividade menu*/
+
+@media (max-width: 750px) {
+
+  .hamburguer {
+    display: block;
+    z-index: 1;
+  }
+
+  .nav-list, .nav-list-esquerda {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgb(255, 255, 255);
+    clip-path: circle(100px at 90% -15%);
+    transition: 1s ease-out;
+
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 0;
+
+    pointer-events: none;
+    z-index: 1;
+
+    
+  }
+
+  .nav-list a {
+    font-size: 24px;
+    opacity: 0;
+    
+  
+    
+  }
+
+  .nav-list li:nth-child(1) a {
+    transition: 0.5s 0.2s;
+    
+  }
+
+  .nav-list li:nth-child(2) a {
+    transition: 0.5s 0.4s;
+  }
+
+  .nav-list li:nth-child(3) a {
+    transition: 0.5s 0.6s;
+  }
+
+  /* Estilos ativos */
+
+  .nav.active .nav-list {
+    clip-path: circle(1500px at 90% -15%);
+    pointer-events: all;
+    
+    
+  }
+
+  .nav.active .nav-list a {
+    opacity: 1;
+    
+  }
+
+  .nav.active .hamburguer {
+    position: fixed;
+    top: 26px;
+    right: 16px;
+    border-top-color: transparent;
+    
+    
+  }
+
+  .nav.active .hamburguer::before {
+    transform: rotate(135deg);
+    
+  }
+
+  .nav.active .hamburguer::after {
+    transform: rotate(-135deg);
+    top: -7px;
+    z-index: 1;
+    
+  }
+}
+
+
+  
+
+  /* responsividade página de agendamento*/
+  @media screen and (max-width: 950px) {
+    .container-agendamento{
+      min-height: 100%;
+      width: 90%;
+      padding: 30px 40px 40px 35px ;
+    }
+    .container-agendamento .content-agendamento .lado_direito{
+     width: 75%;
+     margin-left: 55px;
+  }
+  }
+  @media screen and  (max-width: 820px) {
+    .container-agendamento{
+      margin: 40px 0;
+      height: 100%;
+    }
+    .container-agendamento .content-agendamento{
+      flex-direction: column;
+    }
+    .container-agendamento{
+     width: 100%;
+     flex-direction: row;
+     margin-top: 40px;
+     justify-content: center;
+     flex-wrap: wrap;
+   }
+   .container-agendamento .content-agendamento .lado_esquerdo::before{
+     display: none;
+   }
+   .container-agendamento .content-agendamento .lado_direito{
+     width: 100%;
+     margin-left: 0;
+   }
+
+   .formulario-container,.box-dados-pessoais,.box-consulta,.row{
+    width: 100%;
+    height: auto;
+    padding-left: 30px;
+    padding-right: 30px;
+    text-align: center;
+    display:flexbox;
+    justify-content: center;
+    align-items: center;
+    
+    
+
+   }
+ 
+  }
+  
